@@ -17,7 +17,7 @@
   font-weight: 400;
 }
 
-.nav__item-link {
+.nav__item-link, .clients__reviews-CEO {
   font-family: 'Roboto';
   font-weight: 400;
 }
@@ -433,5 +433,47 @@
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: chocolate;
+}
+
+.clients-w {
+  width: 100%;
+  padding: 150px 0px 94px;
+  background: url(../images/background-review.png) repeat;
+}
+
+.clients {
+  width: 100%;
+}
+
+.clients__inner {
+  max-width: 1119px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.clients__reviews {
+  max-width: 560px;
+  width: 100%;
+}
+
+.clients__quotes {
+  font-size: 40px;
+  text-align: center;
+}
+
+.clients__text {
+  font-family: 'Work Sans';
+  font-weight: 500;
+  font-size: 19.5556px;
+  line-height: 31px;
+  color: #2A2A2A;
+}
+
+.clients__reviews-CEO {
+  font-size: 14.2222px;
+  line-height: 26px;
+  letter-spacing: 0.444444px;
+  color: #3B4355;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
