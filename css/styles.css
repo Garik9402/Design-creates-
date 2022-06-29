@@ -455,6 +455,7 @@
 .clients__slider {
   position: relative;
   padding: 0px 30px;
+  margin-bottom: 126px;
   /* Лента слайдов */
   /* Слайд */
   /* Стрелка */
@@ -521,7 +522,7 @@
 .clients__slider .slick-arrow.slick-prev::after {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  bottom: 6px;
+  bottom: 7px;
   right: 0px;
 }
 
@@ -554,8 +555,12 @@
 .clients__slider .slick-arrow.slick-next::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  bottom: 6px;
+  bottom: 7px;
   right: 0px;
+}
+
+.clients__slider .slick-disabled {
+  opacity: 0.3;
 }
 
 .clients__slider .slick-dots {
@@ -570,24 +575,34 @@
 }
 
 .clients__slider .slick-dots li {
+  position: relative;
+  width: 14.22px;
+  height: 14.22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   list-style: none;
+  cursor: pointer;
 }
 
 .clients__slider .slick-dots li:not(:first-child) {
-  margin-left: 18px;
+  margin-left: 13px;
 }
 
-.clients__slider .slick-dots li.slick-active button {
-  outline: 1px solid #2A2A2A;
+.clients__slider .slick-dots li.slick-active {
+  border: 1px solid #3B4355;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .clients__slider .slick-dots li button {
+  position: absolute;
   font-size: 0;
-  width: 1px;
-  height: 2px;
-  background-color: #2A2A2A;
+  border: 2px solid #2A2A2A;
   border-radius: 100%;
-  cursor: pointer;
+  top: 34%;
+  left: 34%;
 }
 
 .clients__reviews {
@@ -614,6 +629,30 @@
   letter-spacing: 0.444444px;
   color: #3B4355;
   text-align: center;
-  margin-bottom: 23px;
+  margin-bottom: 33px;
+}
+
+.clients__logo-w {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clients__logo-items {
+  max-width: 961px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=styles.css.map */

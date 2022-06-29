@@ -346,6 +346,7 @@
       &__slider {
           position: relative;
           padding: 0px 30px;
+          margin-bottom: 126px;
           .slick-slider {
               /* Слайдер запущен */
               & .slick-initialized {}
@@ -400,7 +401,7 @@
                   }
                   &::after {
                       transform: rotate(45deg);
-                      bottom: 6px;
+                      bottom: 7px;
                       right: 0px;
                   }
               }
@@ -429,35 +430,45 @@
                   }
                   &::after {
                       transform: rotate(-45deg);
-                      bottom: 6px;
+                      bottom: 7px;
                       right: 0px;
                   }
               }
           }
           /* Стрелка не активная */
-          //   & .slick-disabled {}
+          & .slick-disabled {
+              opacity: 0.3;
+          }
           /* Точки (булиты) */
           & .slick-dots {
               display: flex;
               justify-content: center;
               & li {
+                  position: relative;
+                  width: 14.22px;
+                  height: 14.22px;
+                  display: flex;
                   list-style: none;
+                  cursor: pointer;
                   &:not(:first-child) {
-                      margin-left: 18px;
+                      margin-left: 13px;
                   }
               }
               /* Активная точка */
-              & li.slick-active button {
-                  outline: 1px solid #2A2A2A;
+              & li.slick-active {
+                  border: 1px solid #3B4355;
+                  border-radius: 50%;
+                  transition: all 0.3s ease;
               }
               /* Элемент точки */
               & li button {
+                  position: absolute;
                   font-size: 0;
-                  width: 1px;
-                  height: 2px;
-                  background-color: #2A2A2A;
+                  border: 2px solid #2A2A2A;
                   border-radius: 100%;
-                  cursor: pointer;
+                  top: 34%;
+                  left: 34%;
+                  //   cursor: pointer;
               }
           }
       }
@@ -483,8 +494,19 @@
           letter-spacing: 0.444444px;
           color: #3B4355;
           text-align: center;
-          margin-bottom: 23px;
+          margin-bottom: 33px;
       }
-      &__logo-w {}
+      &__logo-w {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+      }
+      &__logo-items {
+          max-width: 961px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
       &__logo {}
   }
