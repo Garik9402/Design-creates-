@@ -14,11 +14,30 @@
   %Roboto-400 {
       font-family: 'Roboto';
       font-weight: 400;
+      font-size: 16px;
+      line-height: 29px;
+      letter-spacing: 0.5px;
+      color: #2A2A2A;
   }
   
   %Poppins-400 {
       font-family: 'Poppins';
       font-weight: 400;
+  }
+  
+  %Work-Sans-700 {
+      font-family: 'Work Sans';
+      font-weight: 700;
+      font-size: 42.6667px;
+      line-height: 57px;
+  }
+  
+  %Roboto-300 {
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 28px;
+      color: #3B4355;
   }
   
   .header-w {
@@ -545,4 +564,73 @@
               &:last-child {}
           }
       }
+  }
+  
+  .achievements-w {
+      width: 100%;
+  }
+  
+  .achievements {
+      width: inherit;
+      &__inner {
+          max-width: 986px;
+          width: 100%;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      &__title-w {
+          text-align: center;
+          margin-bottom: 42px;
+      }
+      &__title {
+          margin-bottom: 7px;
+      }
+      &__subtitle {}
+      &__items-w {
+          max-width: inherit;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+      }
+      &__item {
+          position: relative;
+          max-width: 226px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          &:not(:last-child):after {
+              content: '';
+              position: absolute;
+              width: 1px;
+              height: 85px;
+              background-color: #B9B9B9;
+              opacity: 0.4;
+              right: -13.33px;
+              top: 0;
+          }
+      }
+      &__item-count {
+          @extend%Work-Sans-700;
+          color: #3B4355;
+      }
+      &__item-name {
+          @extend%Roboto-300;
+      }
+  }
+  
+  .title-w {
+      max-width: 648px;
+      width: 100%;
+  }
+  
+  .title {
+      @extend%Work-Sans-700;
+      color: #4D663C;
+  }
+  
+  .subtitle {
+      @extend%Roboto-400;
   }
