@@ -509,9 +509,40 @@
           max-width: 961px;
           width: 100%;
           display: flex;
-          flex-wrap: wrap;
+          //   flex-wrap: wrap;
           justify-content: space-between;
           align-items: center;
+          @include mq(xl) {
+              padding: 0px 15px;
+          }
+          @include mq(md) {
+              flex-direction: column;
+          }
       }
-      &__logo {}
+      &__logo-items-w {
+          max-width: 332px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          @include mq(lg) {
+              justify-content: space-around;
+              &:first-child {
+                  margin-bottom: 10px;
+              }
+              &:last-child {
+                  margin-top: 10px;
+              }
+          }
+          @include mq(sm) {
+              flex-direction: column;
+              align-items: center;
+          }
+      }
+      &__logo {
+          @include mq(sm) {
+              margin-top: 20px;
+              &:last-child {}
+          }
+      }
   }
