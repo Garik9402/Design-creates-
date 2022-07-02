@@ -484,7 +484,8 @@
                   position: absolute;
                   font-size: 0;
                   border: 2px solid #2A2A2A;
-                  border-radius: 100%;
+                  background-color: #2A2A2A;
+                  border-radius: 50%;
                   top: 34%;
                   left: 34%;
                   //   cursor: pointer;
@@ -583,6 +584,7 @@
       &__title-w {
           text-align: center;
           margin-bottom: 42px;
+          padding: 0 15px;
       }
       &__title {
           margin-bottom: 7px;
@@ -593,6 +595,10 @@
           width: 100%;
           display: flex;
           justify-content: space-between;
+          @include mq(lg) {
+              flex-direction: column;
+              align-items: center;
+          }
       }
       &__item {
           position: relative;
@@ -610,6 +616,14 @@
               opacity: 0.4;
               right: -13.33px;
               top: 0;
+              @include mq(lg) {
+                  display: none
+              }
+          }
+          &:not(:last-child) {
+              @include mq(lg) {
+                  margin-bottom: 20px;
+              }
           }
       }
       &__item-count {

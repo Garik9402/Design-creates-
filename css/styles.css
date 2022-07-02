@@ -619,7 +619,8 @@
   position: absolute;
   font-size: 0;
   border: 2px solid #2A2A2A;
-  border-radius: 100%;
+  background-color: #2A2A2A;
+  border-radius: 50%;
   top: 34%;
   left: 34%;
 }
@@ -769,6 +770,7 @@
 .achievements__title-w {
   text-align: center;
   margin-bottom: 42px;
+  padding: 0 15px;
 }
 
 .achievements__title {
@@ -784,6 +786,18 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px) {
+  .achievements__items-w {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .achievements__item {
@@ -811,6 +825,18 @@
   opacity: 0.4;
   right: -13.33px;
   top: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .achievements__item:not(:last-child):after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .achievements__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .achievements__item-count {
