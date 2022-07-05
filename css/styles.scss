@@ -663,6 +663,11 @@
       &__items {}
       &__title-w {}
       .title-w {}
-      &__title {}
+      &__title {
+          @extend%Work-Sans-700;
+          font-size: 24px;
+          line-height: 35%;
+          color: #4D663C;
+      }
       &__subtitle {}
   }
