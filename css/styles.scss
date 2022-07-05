@@ -669,5 +669,10 @@
           line-height: 35%;
           color: #4D663C;
       }
-      &__subtitle {}
+      &__subtitle {
+          @extend%Roboto-400;
+          letter-spacing: 0.5px;
+          color: #2A2A2A;
+          opacity: 0.5;
+      }
   }

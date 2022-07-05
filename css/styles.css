@@ -18,7 +18,7 @@
   font-weight: 400;
 }
 
-.nav__item-link, .clients__reviews-CEO, .subtitle {
+.nav__item-link, .clients__reviews-CEO, .subtitle, .email__subtitle {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
@@ -870,5 +870,11 @@
   font-size: 24px;
   line-height: 35%;
   color: #4D663C;
+}
+
+.email__subtitle {
+  letter-spacing: 0.5px;
+  color: #2A2A2A;
+  opacity: 0.5;
 }
 /*# sourceMappingURL=styles.css.map */
