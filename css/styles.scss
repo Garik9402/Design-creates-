@@ -666,6 +666,9 @@
       &__items {
           max-width: inherit;
           width: inherit;
+          display: flex;
+          justify-content: space-between;
+          align-items: center
       }
       &__title-w {}
       &__title {
@@ -680,5 +683,41 @@
           letter-spacing: 0.5px;
           color: #2A2A2A;
           opacity: 0.5;
+      }
+      &__user {
+          max-width: 283px;
+          width: 100%;
+      }
+      &__user-items {
+          max-width: inherit;
+          width: inherit;
+          display: flex;
+          justify-content: space-between;
+      }
+      &__user-youemail {
+          @extend%Roboto-400;
+          text-transform: none;
+          cursor: pointer;
+      }
+      &__user-button {
+          font-family: 'Roboto';
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 29px;
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          color: #4D663C;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+      }
+      &__user-input {
+          width: 100%;
+          border-width: 0px 0px 2px 0px;
+          border-color: #4D663C;
+          outline: none;
+          font-size: 16px;
       }
   }

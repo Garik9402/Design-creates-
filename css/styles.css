@@ -18,7 +18,7 @@
   font-weight: 400;
 }
 
-.nav__item-link, .clients__reviews-CEO, .subtitle, .email__subtitle {
+.nav__item-link, .clients__reviews-CEO, .subtitle, .email__subtitle, .email__user-youemail {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
@@ -872,6 +872,15 @@
 .email__items {
   max-width: inherit;
   width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .email__title {
@@ -885,5 +894,53 @@
   letter-spacing: 0.5px;
   color: #2A2A2A;
   opacity: 0.5;
+}
+
+.email__user {
+  max-width: 283px;
+  width: 100%;
+}
+
+.email__user-items {
+  max-width: inherit;
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.email__user-youemail {
+  text-transform: none;
+  cursor: pointer;
+}
+
+.email__user-button {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #4D663C;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.email__user-input {
+  width: 100%;
+  border-width: 0px 0px 2px 0px;
+  border-color: #4D663C;
+  outline: none;
+  font-size: 16px;
 }
 /*# sourceMappingURL=styles.css.map */
