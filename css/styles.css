@@ -745,6 +745,7 @@
 
 .achievements-w {
   width: 100%;
+  padding: 57px 0px;
 }
 
 .achievements {
@@ -854,6 +855,8 @@
 
 .email-w {
   width: 100%;
+  background: url(../images/background-review.png) no-repeat;
+  padding: 86px 0px 76px;
 }
 
 .email {
@@ -866,10 +869,16 @@
   margin: 0 auto;
 }
 
+.email__items {
+  max-width: inherit;
+  width: inherit;
+}
+
 .email__title {
   font-size: 24px;
-  line-height: 35%;
+  line-height: 38%;
   color: #4D663C;
+  margin-bottom: 16px;
 }
 
 .email__subtitle {
