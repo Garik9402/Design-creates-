@@ -735,7 +735,9 @@
       &__main-nav-item {
           list-style: none;
       }
-      &__main-nav-itemlink {}
+      &__main-nav-itemlink {
+          text-decoration: none;
+      }
       &__items-bottom {}
       &__logo {}
       &__rights {}
