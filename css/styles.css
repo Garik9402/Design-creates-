@@ -943,4 +943,16 @@
   outline: none;
   font-size: 16px;
 }
+
+.footer-w {
+  width: 100%;
+}
+
+.footer {
+  width: inherit;
+}
+
+.footer__main-nav-item {
+  list-style: none;
+}
 /*# sourceMappingURL=styles.css.map */

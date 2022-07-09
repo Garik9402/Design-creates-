@@ -721,3 +721,22 @@
           font-size: 16px;
       }
   }
+  
+  .footer-w {
+      width: 100%;
+  }
+  
+  .footer {
+      width: inherit;
+      &__inner {}
+      &__main {}
+      &__main-nav {}
+      &__main-nav-list {}
+      &__main-nav-item {
+          list-style: none;
+      }
+      &__main-nav-itemlink {}
+      &__items-bottom {}
+      &__logo {}
+      &__rights {}
+  }
