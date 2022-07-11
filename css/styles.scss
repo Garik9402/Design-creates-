@@ -738,7 +738,9 @@
           max-width: 687px;
           margin: 0 auto;
       }
-      &__main {}
+      &__main {
+          margin-bottom: 87px;
+      }
       &__main-nav {}
       &__main-nav-list {
           display: flex;
@@ -756,6 +758,15 @@
           color: #3B4355;
       }
       &__items-bottom {}
-      &__logo {}
-      &__rights {}
+      &__logo {
+          width: 110px;
+          display: block;
+          padding: 0;
+          margin-bottom: 24px;
+      }
+      &__rights {
+          @extend%Roboto-400;
+          letter-spacing: 0.444444px;
+          color: #3B4355;
+      }
   }

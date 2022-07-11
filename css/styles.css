@@ -18,7 +18,7 @@
   font-weight: 400;
 }
 
-.nav__item-link, .clients__reviews-CEO, .subtitle, .email__subtitle, .email__user-youemail, .footer__main-nav-itemlink {
+.nav__item-link, .clients__reviews-CEO, .subtitle, .email__subtitle, .email__user-youemail, .footer__main-nav-itemlink, .footer__rights {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
@@ -964,6 +964,10 @@
   margin: 0 auto;
 }
 
+.footer__main {
+  margin-bottom: 87px;
+}
+
 .footer__main-nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -980,6 +984,18 @@
 
 .footer__main-nav-itemlink {
   text-decoration: none;
+  letter-spacing: 0.444444px;
+  color: #3B4355;
+}
+
+.footer__logo {
+  width: 110px;
+  display: block;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.footer__rights {
   letter-spacing: 0.444444px;
   color: #3B4355;
 }
