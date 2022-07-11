@@ -18,7 +18,7 @@
   font-weight: 400;
 }
 
-.nav__item-link, .clients__reviews-CEO, .subtitle, .email__subtitle, .email__user-youemail {
+.nav__item-link, .clients__reviews-CEO, .subtitle, .email__subtitle, .email__user-youemail, .footer__main-nav-itemlink {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
@@ -952,7 +952,35 @@
   width: inherit;
 }
 
+.footer__items {
+  max-width: 929px;
+  width: 100%;
+  padding: 61px 0px 53px;
+  background: url(../images/footer__img.png) no-repeat;
+}
+
+.footer__items-inner {
+  max-width: 687px;
+  margin: 0 auto;
+}
+
+.footer__main-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer__main-nav-item {
   list-style: none;
+}
+
+.footer__main-nav-item:not(:first-child) {
+  margin-left: 53.33px;
+}
+
+.footer__main-nav-itemlink {
+  text-decoration: none;
+  letter-spacing: 0.444444px;
+  color: #3B4355;
 }
 /*# sourceMappingURL=styles.css.map */

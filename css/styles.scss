@@ -728,15 +728,32 @@
   
   .footer {
       width: inherit;
-      &__inner {}
+      &__items {
+          max-width: 929px;
+          width: 100%;
+          padding: 61px 0px 53px;
+          background: url(../images/footer__img.png) no-repeat;
+      }
+      &__items-inner {
+          max-width: 687px;
+          margin: 0 auto;
+      }
       &__main {}
       &__main-nav {}
-      &__main-nav-list {}
+      &__main-nav-list {
+          display: flex;
+      }
       &__main-nav-item {
           list-style: none;
+          &:not(:first-child) {
+              margin-left: 53.33px;
+          }
       }
       &__main-nav-itemlink {
           text-decoration: none;
+          @extend%Roboto-400;
+          letter-spacing: 0.444444px;
+          color: #3B4355;
       }
       &__items-bottom {}
       &__logo {}
