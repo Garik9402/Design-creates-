@@ -662,15 +662,26 @@
           max-width: 1009px;
           width: 100%;
           margin: 0 auto;
+          @include mq(xl) {
+              padding: 0 15px;
+          }
       }
       &__items {
           max-width: inherit;
           width: inherit;
           display: flex;
           justify-content: space-between;
-          align-items: center
+          align-items: center;
+          @include mq(lg) {
+              flex-direction: column;
+              align-items: center;
+          }
       }
-      &__title-w {}
+      &__title-w {
+          @include mq(lg) {
+              text-align: center
+          }
+      }
       &__title {
           @extend%Work-Sans-700;
           font-size: 24px;
@@ -737,6 +748,9 @@
       &__items-inner {
           max-width: 687px;
           margin: 0 auto;
+          @include mq(lg) {
+              padding: 0px 15px;
+          }
       }
       &__main {
           margin-bottom: 87px;
