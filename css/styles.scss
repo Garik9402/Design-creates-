@@ -739,6 +739,8 @@
   
   .footer {
       width: inherit;
+      display: flex;
+      justify-content: center;
       &__items {
           max-width: 929px;
           width: 100%;
