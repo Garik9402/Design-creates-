@@ -40,6 +40,17 @@
       color: #3B4355;
   }
   
+  %footer__contacts-style {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14.2222px;
+      line-height: 26px;
+      letter-spacing: 0.444444px;
+      color: #3B4355;
+      text-decoration: none;
+  }
+  
   .header-w {
       width: 100%;
       min-height: 730px;
@@ -785,4 +796,27 @@
           letter-spacing: 0.444444px;
           color: #3B4355;
       }
+      &__contacts {
+          max-width: 351px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 58px 0px 67px;
+      }
+      &__contacts-phone {
+          @extend%footer__contacts-style;
+          opacity: 0.5;
+      }
+      &__contacts-email {
+          @extend%footer__contacts-style;
+          text-transform: lowercase;
+      }
+      &__contacts-address {
+          @extend%footer__contacts-style;
+          opacity: 0.5;
+      }
+      &__socials {}
+      &__socials-iconlink {}
+      &__socials-icon {}
   }
