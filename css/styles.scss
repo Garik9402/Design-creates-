@@ -800,9 +800,12 @@
           max-width: 351px;
           width: 100%;
           display: flex;
-          flex-direction: column;
-          align-items: center;
+          justify-content: center;
           padding: 58px 0px 67px;
+      }
+      &__contacts-inner {
+          display: flex;
+          flex-direction: column;
       }
       &__contacts-phone {
           @extend%footer__contacts-style;
@@ -813,15 +816,32 @@
           @extend%footer__contacts-style;
           text-transform: lowercase;
           margin-bottom: 17.56px;
+          text-align: start
       }
       &__contacts-address {
           @extend%footer__contacts-style;
           opacity: 0.5;
           margin-bottom: 16px;
       }
-      &__socials {}
-      &__socials-iconlink {}
-      &__socials-icon path {
-          fill: #242CF8;
+      &__socials {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+      }
+      &__socials-iconlink {
+          display: flex;
+          align-items: center;
+          &:not(:first-child) {
+              margin-left: 22px;
+          }
+      }
+      &__socials-icon {
+          & path {
+              fill: #4D663C;
+          }
+          &:hover path {
+              transition: all 0.2s ease;
+              fill: orchid;
+          }
       }
   }
