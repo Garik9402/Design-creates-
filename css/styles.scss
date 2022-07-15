@@ -807,16 +807,21 @@
       &__contacts-phone {
           @extend%footer__contacts-style;
           opacity: 0.5;
+          margin-bottom: 17.78px;
       }
       &__contacts-email {
           @extend%footer__contacts-style;
           text-transform: lowercase;
+          margin-bottom: 17.56px;
       }
       &__contacts-address {
           @extend%footer__contacts-style;
           opacity: 0.5;
+          margin-bottom: 16px;
       }
       &__socials {}
       &__socials-iconlink {}
-      &__socials-icon {}
+      &__socials-icon path {
+          fill: #242CF8;
+      }
   }

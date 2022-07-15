@@ -13,5 +13,6 @@ $(document).ready(function() {
 // бургер меню
 let burger = document.querySelector('.burger')
 burger.addEventListener('click', function() {
-    burger.classList.toggle('burger--active-toggle')
-})
+        burger.classList.toggle('burger--active-toggle')
+    })
+    //для прменения svg стилей

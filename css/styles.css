@@ -1065,13 +1065,20 @@
 
 .footer__contacts-phone {
   opacity: 0.5;
+  margin-bottom: 17.78px;
 }
 
 .footer__contacts-email {
   text-transform: lowercase;
+  margin-bottom: 17.56px;
 }
 
 .footer__contacts-address {
   opacity: 0.5;
+  margin-bottom: 16px;
+}
+
+.footer__socials-icon path {
+  fill: #242CF8;
 }
 /*# sourceMappingURL=styles.css.map */
