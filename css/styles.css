@@ -936,6 +936,12 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 767px) {
+  .email__user {
+    margin-top: 20px;
+  }
+}
+
 .email__user-items {
   max-width: inherit;
   width: inherit;
@@ -993,6 +999,15 @@
           justify-content: center;
 }
 
+@media only screen and (max-width: 767px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .footer__items {
   max-width: 929px;
   width: 100%;
@@ -1005,9 +1020,9 @@
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .footer__items-inner {
-    padding: 0px 15px;
+    padding: 0 15px;
   }
 }
 
@@ -1057,6 +1072,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 58px 0px 67px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer__contacts {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .footer__contacts-inner {
