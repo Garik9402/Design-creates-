@@ -10,9 +10,20 @@ $(document).ready(function() {
         infinite: false,
     })
 });
-// бургер меню
+// бургер меню открытие меню
+let mobMain = document.querySelector('.main-m-wrapper')
 let burger = document.querySelector('.burger')
+let closeMain = document.querySelector('.main-m__close')
 burger.addEventListener('click', function() {
-        burger.classList.toggle('burger--active-toggle')
+        burger.classList.add('burger--active')
+        mobMain.classList.add('main-m-wrapper--open')
+        mobMain.classList.remove('main-m-wrapper--close')
+        closeMain.classList.remove('main-m__close--active')
     })
-    //для прменения svg стилей
+    //закрытие меню
+closeMain.addEventListener('click', function() {
+    closeMain.classList.add('main-m__close--active')
+    mobMain.classList.remove('main-m-wrapper--open')
+        // mobMain.classList.add('main-m-wrapper--close')
+
+})
