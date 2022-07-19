@@ -53,33 +53,57 @@
   
   .main-m-wrapper {
       width: 100%;
-      //   position: absolute;
-      //   height: 0;
-      //   min-height: 0;
+      position: absolute;
+      height: 100%;
+      min-height: 30px;
+      z-index: 3;
+      //  min-height: 0;
       //   overflow: hidden;
       //   opacity: 0;
   }
   
   .main-m {
       width: 100%;
+      height: 100%;
+      background: url(../images/footer__img.png);
+      background-size: cover;
       &__inner {
-          max-width: 320px;
+          max-width: 577px;
           width: 100%;
           margin: 0 auto;
       }
+      &__header {
+          background-color: #3B4355;
+          display: flex;
+          justify-content: space-between;
+      }
       &__logo {
+          max-width: 200px;
+          width: 100%;
+          display: block;
           text-align: center;
       }
-      &__items {}
+      &__items {
+          @include mq(md) {}
+      }
+      &__nav {
+          display: flex;
+          justify-content: center;
+      }
       &__nav-list {
-          width: 100%;
           display: flex;
           flex-direction: column;
           align-items: center;
       }
       &__nav-listitem {
-          display: flex;
+          margin-top: 20px;
       }
+  }
+  
+  .content-wrapper {
+      width: 100%;
+      position: relative;
+      z-index: 0;
   }
   
   .header-w {
